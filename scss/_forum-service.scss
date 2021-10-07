@@ -1,0 +1,37 @@
+/*
+*
+* ==========================================
+* forum-service style
+* ==========================================
+*
+*/
+.forum-service{
+  padding: 66px 0 90px;
+  position: relative;
+  overflow: hidden;
+  .row {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  .row>.col,  .row> [class*=col-] {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .forum-service__sub-heading{
+    display: inline-block;
+    position: relative;
+    font-family: $base-font;
+    font-weight: $regular;
+    font-size: 24px;
+    color: $light-blue;
+  }
+  .forum-service__item{
+    margin-bottom: 28px;
+    img{
+      margin-bottom: 37px;
+    }
+    p{
+      text-align: justify;
+    }
+  }
+}

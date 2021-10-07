@@ -1,0 +1,44 @@
+.counter-area{
+ padding: 60px 0;
+  .row {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  .row>.col,  .row> [class*=col-] {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .counter{
+    color:$primary-color;
+    font-family: $base-font;
+    font-size: 90px;
+    font-weight: $light;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+  }
+  h6{
+    color:$primary-color;
+    font-family: $base-font;
+    font-size: 14px;
+    font-weight: $bold;
+    font-style: normal;
+    letter-spacing: 6.22px;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  p{
+    color: #7e8085;
+    font-size: 14px;
+    font-weight: $light;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+  }
+}

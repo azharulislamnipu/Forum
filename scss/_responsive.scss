@@ -1,0 +1,317 @@
+@import "variabls";
+/*  --------------------------------  #24.Responsive Style--------------------------------  */
+
+
+/*
+*
+* ==============================================
+* Small devices (landscape phones, 568px and up)
+* ==============================================
+*
+*/
+@media #{$sm-layout} {
+
+  /*
+  *
+  * ==========================================
+  * header end
+  * ==========================================
+  *
+  */
+
+
+}
+
+
+/*
+*
+* =============================================================
+* small devices (portrait & landscape phones , less than 767px)
+* =============================================================
+*
+*/
+
+@media #{$xs-layout} {
+
+  .d-lg-block {
+    display: block !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+
+  .d-md-none {
+    display: none !important;
+  }
+  .d-lg-none {
+    display: none !important;
+  }
+  .d-sm-none {
+    display: none !important;
+  }
+
+  .d-sm-block {
+    display: block !important;
+  }
+
+  .justify-content-sm-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  .justify-content-sm-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+
+  h2, .h2 {
+    font-size: $font-30;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  figure {
+    margin: 20px 0;
+  }
+  .mb-100 {
+    margin-bottom: 50px;
+  }
+
+  #scroll {
+    display: none !important;
+  }
+
+  .order-sm-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .hero-banner__caption {
+    padding: 60px 0;
+  }
+  .hero-banner__arrow-bottom {
+    margin-top: 30px;
+    display: inline-block;
+  }
+  .count-down__wrap {
+    padding: 10px;
+    margin: -155px auto 0;
+
+    .count-down__title {
+      margin-bottom: 10px;
+    }
+  }
+  .count-wrap {
+
+    li {
+
+      .count-wrap__count {
+        width: 60px;
+        height: 89px;
+      }
+
+      .count-wrap__count-number {
+        font-size: 40px;
+      }
+
+      .count-wrap__count-title {
+        font-size: 14px;
+      }
+    }
+
+  }
+  .forum-service{
+    .mb-60{
+      margin-bottom: 0 !important;
+    }
+  .forum-service__sub-heading {
+    font-size: 16px;
+  }
+    .forum-service__item{
+      margin-bottom: 20px;
+    }
+}
+
+
+
+  .divider:after {
+    right: 0;
+    background: url(#{$assetPath}/m-divider-r.png) no-repeat center right;
+    height: 100px;
+    bottom: 0;
+    margin-bottom: -208px;
+  }
+  .divider:before {
+    left: 0;
+    background: url(#{$assetPath}/m-divider-lerft.png) no-repeat center right;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+  }
+
+  .moderator:after, .moderator:before {
+    display: none;
+  }
+
+  .google-map, .about-img {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .forum:before {
+    display: none;
+  }
+
+  .forum, .about, .moderator {
+    padding: 30px 0;
+  }
+  .social-link {
+    margin-bottom: 30px;
+  }
+
+  .brand, .partners-brand {
+    padding: 10px 0;
+
+    .row {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .col {
+      -ms-flex-preferred-size: 1;
+      flex-basis: inherit;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      max-width: 50%;
+    }
+  }
+
+}
+
+/*
+*
+* ======================================================
+* Extra small devices (portrait phones, less than 480px)
+* ======================================================
+*
+*/
+
+@media #{$xss-layout} {
+  .text-sm-center {
+    text-align: center !important;
+  }
+
+  .justify-content-sm-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  .justify-content-sm-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+
+  /*
+  *
+  * ==========================================
+  * #helper class end
+  * ==========================================
+  *
+  */
+
+
+}
+
+
+/*
+*
+* ==========================================
+* Medium devices (tablets, 768px and up)
+* ==========================================
+*
+*/
+
+@media #{$md-layout} {
+  h2, .h2 {
+    font-size: $font-34;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+
+  #scroll {
+    display: none !important;
+  }
+  .site-header {
+    height: auto;
+    padding: 20px 0;
+  }
+  .site-header .form-inline {
+    justify-content: center;
+  }
+
+  .divider:after {
+    right: 0;
+    background: url(#{$assetPath}/m-divider-r.png) no-repeat center right;
+    height: 100px;
+    bottom: 0;
+    margin-bottom: -208px;
+  }
+  .divider:before {
+    left: 0;
+    background: url(#{$assetPath}/m-divider-lerft.png) no-repeat center right;
+    width: 91px;
+    height: 100px;
+    margin-top: 100px;
+  }
+
+  .moderator:after, .moderator:before {
+    display: none;
+  }
+
+  .hero-banner {
+    height: 441px;
+    background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+  }
+
+
+}
+
+
+/*
+*
+* ==========================================
+* Large devices (desktops, 992px and up)
+* ==========================================
+*
+*/
+
+@media #{$lg-layout} {
+
+  h2, .h2 {
+    font-size: $font-34;
+  }
+
+
+}
+
+
+/*
+*
+* ==========================================
+* Large devices (desktops, 1200px and up)
+* ==========================================
+*
+*/
+
+@media #{$xl-layout} {
+
+
+}

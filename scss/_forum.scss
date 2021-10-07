@@ -1,0 +1,133 @@
+.forum{
+padding: 170px 0 150px;
+position: relative;
+  &:after, &:before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 500px;
+    width: 210px;
+    top: 0;
+  }
+  &:before{
+    left: 0;
+    background:url(#{$assetPath}/about-shape.png)  no-repeat center left;
+    background-size: auto;
+    margin-top:-7%;
+  }
+
+
+  .row {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  .row>.col,  .row> [class*=col-] {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+}
+.google-map{
+  background:url(#{$assetPath}/pattern-green.png) no-repeat center right;
+  background-size: auto;
+  padding-right: 30px;
+  padding-bottom: 37px;
+}
+
+
+.about{
+  padding: 108px 0 140px;
+  background-color: #f6f8f9;
+  .row {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  .row>.col,  .row> [class*=col-] {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  p{
+    margin-bottom: 40px;
+  }
+}
+
+.about-img{
+  background:url(#{$assetPath}/pattern-blue.png) no-repeat center right;
+  background-size: auto;
+  padding-right: 30px;
+  padding-bottom: 37px;
+}
+
+
+.moderator{
+  background:url(#{$assetPath}/pattern-m.png) no-repeat center bottom;
+  background-size: auto;
+  padding-top: 136px;
+  padding-bottom: 160px;
+  position: relative;
+  &:after, &:before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 500px;
+    width: 400px;
+    top: 0;
+  }
+  &:after{
+    background:url(#{$assetPath}/m-right-shape.png) no-repeat center right;
+    background-size: auto;
+    right:20%;
+    margin-top:-4%;
+  }
+  &:before{
+    left: 20%;
+    background:url(#{$assetPath}/m-left-shape.png)  no-repeat center left;
+    background-size: auto;
+    margin-top:-7%;
+  }
+  .container{
+    max-width: 850px;
+  }
+
+}
+
+.moderator-item{
+  position: relative;
+  box-shadow: 0 2px 4px rgba(44, 46, 48, 0.05);
+  border-radius: 5px;
+  border: 1px solid #e7eaee;
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  .shape{
+    position: relative;
+    margin-bottom: 30px;
+    span.shape-icon{
+      bottom: 20%;
+      position: absolute;
+      right: auto;
+      margin-left: -30px;
+    }
+  }
+  .name{
+    margin-bottom: 10px;
+  }
+  .ocapation{
+    color: #7e8085;
+    font-family: $base-font;
+    font-weight: $regular;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+
+.brand{
+  padding: 50px 0;
+  overflow: hidden;
+}
+.partners-brand{
+  padding-bottom: 160px;
+}

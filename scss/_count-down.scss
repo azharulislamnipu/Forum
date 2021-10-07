@@ -1,0 +1,99 @@
+/*
+*
+* ==========================================
+* count-down__wrap style
+* ==========================================
+*
+*/
+.count-down{
+  position: relative;
+}
+.count-down__wrap{
+  overflow: hidden;
+  position: relative;
+  max-width: 703px;
+  box-shadow: 0 6px 22px rgba(45, 58, 82, 0.25);
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px;
+  margin: -175px auto 0;
+  .count-down__title{
+    color: #d7d9e0;
+    font-family: $base-font;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 6.22px;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    display: block;
+  }
+
+&:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 133px;
+  height: 5px;
+  background-color: $yellow;
+  margin: 0 auto;
+}
+
+}
+
+.count-wrap {
+position: relative;
+text-align: center;
+
+  li {
+    display: inline-flex;
+    &.list-inline-item:not(:last-child) {
+      margin-right: 15px;
+      @media #{$xss-layout, $md-layout} {
+        margin-right: 5px;
+      }
+    }
+    position: relative;
+    span.semicolon{
+      top: 40%;
+      color: #d7d9e0;
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    .count-wrap__count {
+      width: 120px;
+      height: 145px;
+      color: $primary-color;
+      padding: 0;
+      font-family:$base-font;
+      border-radius: 10px;
+    }
+
+    .count-wrap__count-number {
+      display: block;
+      font-size: 70px;
+      font-weight: 300;
+      font-style: normal;
+      color: $primary-color;
+      font-family:$base-font;
+    }
+
+    .count-wrap__count-title {
+      display: block;
+      font-family:$base-font;
+      font-size: 21px;
+      font-weight: $regular;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: center;
+      color: #93b9ff;
+    }
+  }
+}

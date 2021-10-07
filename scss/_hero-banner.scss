@@ -1,0 +1,40 @@
+/*
+*
+* ==========================================
+* hero-banner style
+* ==========================================
+*
+*/
+.hero-banner{
+  position: relative;
+  height: 541px;
+  background-color: $secondary-color;
+  background-position: center bottom;
+  background-size: auto;
+  -moz-background-size: auto;
+  -webkit-background-size: auto;
+  background-repeat: no-repeat;
+}
+.hero-banner__mobile{
+  position: relative;
+  height: 605px;
+  background-color: $secondary-color;
+  background-position: center;
+  background-size: auto;
+  -moz-background-size: auto;
+  -webkit-background-size: auto;
+  background-repeat: no-repeat;
+}
+.hero-banner__caption{
+  margin: 0 auto;
+  text-align: center;
+  color: #93b9ff;
+  max-width: 560px;
+  padding: 110px 0;
+  font-size: $font-18;
+}
+
+.hero-banner__title{
+  color: $white;
+}
+
