@@ -1,0 +1,12 @@
+
+.brand{
+  padding: 50px 0;
+  overflow: hidden;
+}
+.partners{
+  padding-bottom: 160px;
+  overflow: hidden;
+  .col {
+    flex-basis: 20%;
+  }
+}

@@ -585,7 +585,7 @@ hr {
   background-color: #E5E5E5;
   border: 0;
   height: 1px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 ul, ol {
@@ -1546,12 +1546,11 @@ object {
 .divider:after {
   background: url(images/right.png) no-repeat center right;
   background-size: auto;
-  right: 15%;
-  margin-top: -170px;
+  right: 18%;
+  margin-top: -135px;
 }
 .divider:before {
-  left: 15%;
-  margin-top: -25px;
+  left: 18%;
   background: url(images/left.png) no-repeat center left;
   background-size: auto;
 }
@@ -1656,7 +1655,7 @@ object {
 /*
 *
 * ==========================================
-* count-down__wrap style
+* count-down style
 * ==========================================
 *
 */
@@ -1758,7 +1757,7 @@ object {
 *
 */
 .forum-service {
-  padding: 66px 0 90px;
+  padding: 66px 0 65px;
   position: relative;
   overflow: hidden;
 }
@@ -1790,6 +1789,7 @@ object {
 
 .counter-area {
   padding: 60px 0;
+  overflow: hidden;
 }
 .counter-area .row {
   margin-right: -30px;
@@ -1798,6 +1798,18 @@ object {
 .counter-area .row > .col, .counter-area .row > [class*=col-] {
   padding-right: 30px;
   padding-left: 30px;
+}
+.counter-area .counter-item__1 {
+  max-width: 300px;
+  margin: 0 auto 10px auto;
+}
+.counter-area .counter-item__2 {
+  max-width: 250px;
+  margin: 0 auto 10px auto;
+}
+.counter-area .counter-item__3 {
+  max-width: 235px;
+  margin: 0 auto 10px auto;
 }
 .counter-area .counter {
   color: #223f78;
@@ -1809,7 +1821,6 @@ object {
   line-height: normal;
   text-align: center;
   display: block;
-  margin-bottom: 10px;
 }
 .counter-area h6 {
   color: #223f78;
@@ -1833,9 +1844,16 @@ object {
   text-align: center;
 }
 
-.forum {
-  padding: 170px 0 150px;
+.world-map {
+  width: 100%;
+  overflow: hidden;
   position: relative;
+}
+
+.forum {
+  padding: 122px 0 113px;
+  position: relative;
+  overflow: hidden;
 }
 .forum:after, .forum:before {
   content: '';
@@ -1859,6 +1877,20 @@ object {
   padding-right: 30px;
   padding-left: 30px;
 }
+.forum .forum-subtitle {
+  font-family: "Aileron";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 54px;
+  color: #93B9FF;
+}
+.forum .forum-title {
+  font-family: "Aileron";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  color: #223f78;
+}
 
 .google-map {
   background: url(images/pattern-green.png) no-repeat center right;
@@ -1870,6 +1902,7 @@ object {
 .about {
   padding: 108px 0 140px;
   background-color: #f6f8f9;
+  overflow: hidden;
 }
 .about .row {
   margin-right: -30px;
@@ -1882,6 +1915,19 @@ object {
 .about p {
   margin-bottom: 40px;
 }
+.about .about-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 54px;
+  color: #93B9FF;
+}
+.about .about-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  color: #223f78;
+  margin-bottom: 15px;
+}
 
 .about-img {
   background: url(images/pattern-blue.png) no-repeat center right;
@@ -1891,11 +1937,14 @@ object {
 }
 
 .moderator {
+  padding-top: 136px;
+  padding-bottom: 0;
+  position: relative;
+}
+.moderator .container {
   background: url(images/pattern-m.png) no-repeat center bottom;
   background-size: auto;
-  padding-top: 136px;
-  padding-bottom: 160px;
-  position: relative;
+  padding-bottom: 165px;
 }
 .moderator:after, .moderator:before {
   content: '';
@@ -1908,17 +1957,24 @@ object {
 .moderator:after {
   background: url(images/m-right-shape.png) no-repeat center right;
   background-size: auto;
-  right: 20%;
-  margin-top: -4%;
+  right: 10%;
+  margin-top: -3%;
 }
 .moderator:before {
-  left: 20%;
+  left: 15%;
   background: url(images/m-left-shape.png) no-repeat center left;
   background-size: auto;
   margin-top: -7%;
 }
-.moderator .container {
+.moderator .max-content {
   max-width: 850px;
+  margin: 0 auto;
+}
+.moderator .moderator-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  color: #223f78;
 }
 
 .moderator-item {
@@ -1929,6 +1985,7 @@ object {
   background-color: #ffffff;
   padding: 40px;
   text-align: center;
+  z-index: 9;
 }
 .moderator-item .shape {
   position: relative;
@@ -1940,10 +1997,10 @@ object {
   right: auto;
   margin-left: -30px;
 }
-.moderator-item .name {
+.moderator-item .moderator-name {
   margin-bottom: 10px;
 }
-.moderator-item .ocapation {
+.moderator-item .moderator-occupation {
   color: #7e8085;
   font-family: "Aileron";
   font-weight: 400;
@@ -1958,8 +2015,12 @@ object {
   overflow: hidden;
 }
 
-.partners-brand {
+.partners {
   padding-bottom: 160px;
+  overflow: hidden;
+}
+.partners .col {
+  flex-basis: 20%;
 }
 
 /*============================================================================
@@ -1969,6 +2030,7 @@ object {
   position: relative;
   overflow: hidden;
   border-top: 1px solid #d7d7d7;
+  padding: 30px 0;
 }
 .footer-area p {
   color: #2c2e30;
@@ -1977,19 +2039,15 @@ object {
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+  margin-bottom: 0;
 }
-
-.footer-bottom {
-  position: relative;
-  padding: 30px 0;
-}
-.footer-bottom .social-link {
+.footer-area .social-link {
   padding: 0;
 }
-.footer-bottom .social-link li.list-inline-item:not(:last-child) {
+.footer-area .social-link li.list-inline-item:not(:last-child) {
   margin-right: 14px;
 }
-.footer-bottom .social-link li > a {
+.footer-area .social-link li > a {
   display: block;
   color: #ffffff;
   -webkit-transition: 0.2s cubic-bezier(0.02, 0.54, 0.58, 1);
@@ -2004,7 +2062,7 @@ object {
   text-align: center;
   border-radius: 50%;
 }
-.footer-bottom .social-link li > a:hover, .footer-bottom .social-link li > a:focus {
+.footer-area .social-link li > a:hover, .footer-area .social-link li > a:focus {
   color: #ffffff;
   background-color: #93b9ff;
 }
@@ -2076,10 +2134,6 @@ object {
     font-size: 20px;
   }
 
-  h5 {
-    font-size: 14px;
-  }
-
   figure {
     margin: 20px 0;
   }
@@ -2125,6 +2179,9 @@ object {
     font-size: 14px;
   }
 
+  .forum-service {
+    padding: 30px 0;
+  }
   .forum-service .mb-60 {
     margin-bottom: 0 !important;
   }
@@ -2134,13 +2191,20 @@ object {
   .forum-service .forum-service__item {
     margin-bottom: 20px;
   }
+  .forum-service figcaption {
+    padding: 0 15px;
+  }
+
+  .divider {
+    padding: 0;
+  }
 
   .divider:after {
     right: 0;
     background: url(images/m-divider-r.png) no-repeat center right;
     height: 100px;
     bottom: 0;
-    margin-bottom: -208px;
+    margin-bottom: -299px;
   }
 
   .divider:before {
@@ -2148,35 +2212,89 @@ object {
     background: url(images/m-divider-lerft.png) no-repeat center right;
     width: 100px;
     height: 100px;
-    margin-top: 100px;
+    margin-top: 20px;
+  }
+
+  .counter-area {
+    padding: 60px 0 30px;
+  }
+
+  .counter-item {
+    margin-bottom: 50px !important;
+  }
+  .counter-item:last-child {
+    margin-bottom: 0px !important;
+  }
+
+  .forum .forum-title {
+    font-size: 30px;
+    line-height: 44px;
+    margin-bottom: 50px;
+  }
+  .forum .forum-subtitle {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .forum .forum-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .google-map {
+    padding-right: 0px;
+  }
+
+  .google-map, .about-img {
+    margin-bottom: 22px;
+    padding-right: 0;
+  }
+
+  .about .about-title {
+    margin-bottom: 45px;
+    font-size: 30px;
+    line-height: 43px;
+  }
+  .about .about-subtitle {
+    font-size: 16px;
+    line-height: 43px;
+  }
+  .about .about-content {
+    padding: 0 15px;
+    display: block;
+  }
+
+  .moderator-title {
+    font-size: 30px;
+    line-height: 43px;
   }
 
   .moderator:after, .moderator:before {
     display: none;
   }
 
-  .google-map, .about-img {
-    margin-bottom: 30px;
-  }
-
-  .section-title {
-    text-align: center;
+  .moderator .container {
+    background: url(images/pattern-m.png) repeat center bottom;
+    padding-bottom: 40px;
   }
 
   .forum:before {
     display: none;
   }
 
-  .forum, .about, .moderator {
+  .forum, .about {
     padding: 30px 0;
   }
 
-  .social-link {
-    margin-bottom: 30px;
+  .moderator {
+    padding: 30px 0;
+  }
+  .moderator .moderator-title {
+    font-size: 30px;
+    line-height: 43px;
   }
 
   .brand, .partners-brand {
-    padding: 10px 0;
+    padding: 30px 0;
   }
   .brand .row, .partners-brand .row {
     align-items: center;
@@ -2188,6 +2306,13 @@ object {
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 50%;
+  }
+
+  .partners {
+    padding-bottom: 40px;
+  }
+  .partners .col {
+    flex-basis: 50%;
   }
 }
 /*
@@ -2234,10 +2359,6 @@ object {
 
   h3 {
     font-size: 21px;
-  }
-
-  h5 {
-    font-size: 14px;
   }
 
   #scroll {
@@ -2291,6 +2412,27 @@ object {
   h2, .h2 {
     font-size: 34px;
   }
+
+  .divider:before {
+    left: 20px;
+    margin-top: -120px;
+  }
+
+  .divider:after {
+    right: 20px;
+    margin-top: -165px;
+  }
+
+  .moderator:before {
+    left: 0%;
+    margin-top: -13%;
+    z-index: 0;
+  }
+
+  .moderator:after {
+    right: 0%;
+    margin-top: -5%;
+  }
 }
 /*
 *
@@ -2299,5 +2441,24 @@ object {
 * ==========================================
 *
 */
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .divider:before {
+    left: 20px;
+  }
+
+  .divider:after {
+    right: 20px;
+  }
+
+  .moderator:before {
+    left: 5%;
+    margin-top: -9%;
+  }
+
+  .moderator:after {
+    right: 5%;
+    margin-top: -4%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -69,9 +69,7 @@
   h3 {
     font-size: 20px;
   }
-  h5 {
-    font-size: 14px;
-  }
+
   figure {
     margin: 20px 0;
   }
@@ -123,6 +121,7 @@
 
   }
   .forum-service{
+    padding: 30px 0;
     .mb-60{
       margin-bottom: 0 !important;
     }
@@ -132,48 +131,108 @@
     .forum-service__item{
       margin-bottom: 20px;
     }
+    figcaption{
+      padding: 0 15px;
+    }
 }
 
-
-
+  .divider {
+     padding:0;
+  }
   .divider:after {
     right: 0;
     background: url(#{$assetPath}/m-divider-r.png) no-repeat center right;
     height: 100px;
     bottom: 0;
-    margin-bottom: -208px;
+    margin-bottom: -299px;
   }
   .divider:before {
     left: 0;
     background: url(#{$assetPath}/m-divider-lerft.png) no-repeat center right;
     width: 100px;
     height: 100px;
-    margin-top: 100px;
+    margin-top: 20px;
   }
 
+  .counter-area {
+    padding: 60px 0 30px;
+  }
+
+  .counter-item{
+    margin-bottom: 50px !important;
+    &:last-child{
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .forum {
+    .forum-title {
+      font-size: 30px;
+      line-height: 44px;
+      margin-bottom: 50px;
+    }
+    .forum-subtitle {
+      font-weight: $bold;
+      font-size: 16px;
+    }
+    .forum-content{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .google-map {
+    padding-right:0px;
+    }
+
+  .google-map, .about-img {
+    margin-bottom: 22px;
+    padding-right: 0;
+  }
+  .about {
+    .about-title {
+      margin-bottom: 45px;
+      font-size: 30px;
+      line-height: 43px;
+    }
+    .about-subtitle{
+      font-size: 16px;
+      line-height: 43px;
+    }
+    .about-content{
+      padding: 0 15px;
+      display: block;
+    }
+  }
+  .moderator-title{
+    font-size: 30px;
+    line-height: 43px;
+  }
   .moderator:after, .moderator:before {
     display: none;
   }
+  .moderator .container {
+    background: url(images/pattern-m.png) repeat center bottom;
+    padding-bottom: 40px;
+  }
 
-  .google-map, .about-img {
-    margin-bottom: 30px;
-  }
-  .section-title {
-    text-align: center;
-  }
   .forum:before {
     display: none;
   }
-
-  .forum, .about, .moderator {
+  .forum, .about {
     padding: 30px 0;
   }
-  .social-link {
-    margin-bottom: 30px;
-  }
 
+  .moderator {
+    padding: 30px 0;
+     .moderator-title {
+      font-size: 30px;
+      line-height: 43px;
+    }
+  }
+  
   .brand, .partners-brand {
-    padding: 10px 0;
+    padding: 30px 0;
 
     .row {
       align-items: center;
@@ -186,6 +245,13 @@
       -ms-flex-positive: 1;
       flex-grow: 1;
       max-width: 50%;
+    }
+  }
+
+  .partners{
+    padding-bottom: 40px;
+    .col {
+      flex-basis: 50%;
     }
   }
 
@@ -240,9 +306,7 @@
   h3 {
     font-size: 21px;
   }
-  h5 {
-    font-size: 14px;
-  }
+
 
   #scroll {
     display: none !important;
@@ -299,6 +363,24 @@
     font-size: $font-34;
   }
 
+  .divider:before {
+    left: 20px;
+    margin-top: -120px;
+  }
+  .divider:after {
+    right: 20px;
+    margin-top: -165px;
+  }
+
+  .moderator:before {
+    left: 0%;
+    margin-top: -13%;
+    z-index: 0;
+  }
+  .moderator:after {
+    right: 0%;
+    margin-top: -5%;
+  }
 
 }
 
@@ -312,6 +394,18 @@
 */
 
 @media #{$xl-layout} {
-
-
+  .divider:before {
+    left: 20px;
+  }
+  .divider:after {
+    right: 20px;
+  }
+  .moderator:before {
+    left: 5%;
+    margin-top: -9%;
+  }
+  .moderator:after {
+    right: 5%;
+    margin-top: -4%;
+  }
 }

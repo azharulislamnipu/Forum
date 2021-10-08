@@ -516,7 +516,7 @@ hr {
     background-color:#E5E5E5;
     border: 0;
     height: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 }
 
 ul, ol {
@@ -1388,6 +1388,7 @@ object {
     }
 }
 
+
 .divider{
     position: relative;
     padding: 30px 0;
@@ -1401,13 +1402,11 @@ object {
     &:after{
         background:url(#{$assetPath}/right.png) no-repeat center right;
         background-size: auto;
-        right:15%;
-        margin-top: -170px;
-
+        right: 18%;
+        margin-top: -135px;
     }
     &:before{
-        left: 15%;
-        margin-top: -25px;
+        left: 18%;
         background:url(#{$assetPath}/left.png)  no-repeat center left;
         background-size: auto;
     }

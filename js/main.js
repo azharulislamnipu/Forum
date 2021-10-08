@@ -5,6 +5,8 @@
     const $body = $('body');
 
 
+
+
     /*
     *
     * ==========================================
@@ -61,7 +63,7 @@
             $trigger.html(' <li class="list-inline-item text-center">\n' +
                 '                        <div class="count-wrap__count">\n' +
                 '                            <span class="count-wrap__count-number">' + days + '</span>\n' +
-                '                            <span class="count-wrap__count-title">DAYS</span>\n' +
+                '                            <span class="count-wrap__count-title">Days</span>\n' +
                 '                        </div>\n' +
                 '                    </li>\n' +
                 '                    <li class="list-inline-item text-center">\n' +
@@ -70,7 +72,7 @@
                 '                    <li class="list-inline-item text-center">\n' +
                 '                        <div class="count-wrap__count">\n' +
                 '                        <span class="count-wrap__count-number">' + hours + '</span>\n' +
-                '                        <span class="count-wrap__count-title">HOURS</span>\n' +
+                '                        <span class="count-wrap__count-title">Hours</span>\n' +
                 '                        </div>\n' +
                 '                    </li>\n' +
                 '                    <li class="list-inline-item text-center">\n' +
@@ -79,7 +81,7 @@
                 '                    <li class="list-inline-item text-center">\n' +
                 '                        <div class="count-wrap__count">\n' +
                 '                        <span class="count-wrap__count-number">' + minutes + '</span>\n' +
-                '                        <span class="count-wrap__count-title">MINS</span>\n' +
+                '                        <span class="count-wrap__count-title">Minutes</span>\n' +
                 '                        </div>\n' +
                 '                    </li>\n' +
                 '                    <li class="list-inline-item text-center">\n' +
@@ -88,7 +90,7 @@
                 '                    <li class="list-inline-item text-center">\n' +
                 '                        <div class="count-wrap__count">\n' +
                 '                        <span class="count-wrap__count-number">' + seconds + '</span>\n' +
-                '                        <span class="count-wrap__count-title">SECS</span>\n' +
+                '                        <span class="count-wrap__count-title">Seconds</span>\n' +
                 '                        </div>\n' +
                 '                    </li>');
 

@@ -1,5 +1,6 @@
 .counter-area{
  padding: 60px 0;
+  overflow: hidden;
   .row {
     margin-right: -30px;
     margin-left: -30px;
@@ -8,6 +9,19 @@
     padding-right: 30px;
     padding-left: 30px;
   }
+  .counter-item__1{
+    max-width: 300px;
+    margin: 0 auto 10px auto;
+  }
+  .counter-item__2{
+    max-width: 250px;
+    margin: 0 auto 10px auto;
+  }
+  .counter-item__3{
+    max-width: 235px;
+    margin: 0 auto 10px auto;
+  }
+
   .counter{
     color:$primary-color;
     font-family: $base-font;
@@ -18,7 +32,6 @@
     line-height: normal;
     text-align: center;
     display: block;
-    margin-bottom: 10px;
   }
   h6{
     color:$primary-color;
