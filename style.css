@@ -1,6 +1,6 @@
 /*!
 Theme Name: Forum
-Theme URI: https://forum.puredevs.com/
+Theme URI: http://ndev.relicwp.com/forum
 Author: Azharul Islam
 Author URI:http://azhardevs.herokuapp.com/
 Description: Landing Page Template
@@ -10,7 +10,7 @@ Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: forum
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: landing page, Forum, Youth Forum
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
@@ -22,30 +22,24 @@ Use it to make something cool, have fun, and share what you've learned.
 ==========================================
 
    #00. Normalize or reset css
-   #01. Document Setup
+   #01. Base CSS
    #02. Typography
    #03. Element Base
    #04. Forms Input Style
    #05. Wordpress Default style
    #06. Helper Classes
-   #07. Slick slider style
-   #08. Bread Come Style
-   #09. Header and menu style
-   #10. Hero banner Style
-   #11. why choose style
-   #12. work process style
-   #13. Testimonial style
-   #14. get in touch style
-   #15. Blog Style
-   #16. Product Style
-   #17. contact Style
-   #18. Service Style
-   #19. team Style
-   #20. About style
-   #21. error style
-   #22. Search style
-   #23.footer-style
-   #24.Responsive Style
+   #07. Header style
+   #08. Banner Style
+   #09. Count-down style
+   #10. Forum service Style
+   #11. Counter area style
+   #12. World-map style
+   #13. Forum style
+   #14. About style
+   #15. Moderator Style
+   #16. Brand Style
+   #17. footer-style
+   #18. Responsive Style
 
    ==========================================*/
 @font-face {
@@ -634,7 +628,7 @@ table {
 /*
 	#4. Forms Input Style
  *==========================================*/
-button, .btn, .btn-style-2,
+button, .btn,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -657,7 +651,7 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
-button:hover, .btn:hover, .btn-style-2:hover,
+button:hover, .btn:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
@@ -668,7 +662,7 @@ input[type="submit"]:hover {
   transition: 0.35s ease;
 }
 
-button:active, button:focus, .btn:focus, .btn-style-2:focus, .btn:focus, .btn-style-2:focus,
+button:active, button:focus, .btn:focus, .btn:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -680,17 +674,6 @@ input[type="submit"]:focus {
   box-shadow: none;
   outline: none;
   transition: 0.35s ease;
-}
-
-.btn-style-2 {
-  background-color: transparent;
-  border: 2px solid #223f78;
-  color: #223f78;
-}
-.btn-style-2:hover {
-  background-color: #2f5bea;
-  color: #ffffff;
-  border: 2px solid transparent;
 }
 
 input[type="text"],
@@ -1120,13 +1103,18 @@ object {
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
   padding: 0;
-  font-size: 30px;
+  font-size: 20px;
   height: 50px;
   display: flex;
   align-items: center;
   font-weight: 700;
   font-family: "Aileron";
-  color: #ffffff;
+  color: #223f78;
+  text-decoration: none;
+}
+
+.custom-logo-link:hover {
+  color: #2f5bea;
 }
 
 /**
@@ -1427,12 +1415,6 @@ object {
   word-break: break-word;
 }
 
-.other-inline {
-  float: right;
-  display: inline-block;
-  margin-top: -52px;
-}
-
 /*
 *
 * ==========================================
@@ -1450,11 +1432,11 @@ object {
   line-height: 50px;
   color: #ffffff;
   text-align: center;
-  background-color: #223f78;
+  background-color: #2f5bea;
   display: none;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
-  border-radius: 60px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -1463,7 +1445,7 @@ object {
 }
 
 #scroll:hover {
-  background-color: #2f5bea;
+  background-color: #223f78;
   color: #ffffff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1473,63 +1455,6 @@ object {
 
 .compensate-for-scrollbar {
   margin-right: 0 !important;
-}
-
-/*
-*
-* ==========================================
-* custom check style
-* ==========================================
-*
-*/
-.styled-checkbox {
-  position: absolute;
-  opacity: 0;
-}
-.styled-checkbox + label {
-  position: relative;
-  cursor: pointer;
-  padding: 0;
-}
-.styled-checkbox + label:before {
-  content: '';
-  margin-top: 2px;
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: text-top;
-  width: 17px;
-  height: 17px;
-  background: white;
-  border: 1px solid #ced4da;
-}
-.styled-checkbox:hover + label:before {
-  background: white;
-}
-.styled-checkbox:focus + label:before {
-  box-shadow: none;
-}
-.styled-checkbox:checked + label:before {
-  background: white;
-  border: 1px solid #2f5bea;
-}
-.styled-checkbox:disabled + label {
-  color: #b8b8b8;
-  cursor: auto;
-}
-.styled-checkbox:disabled + label:before {
-  box-shadow: none;
-  background: #ddd;
-}
-.styled-checkbox:checked + label:after {
-  content: '';
-  position: absolute;
-  left: 4px;
-  top: 12px;
-  background: #2f5bea;
-  width: 2px;
-  height: 2px;
-  box-shadow: 2px 0 0 #2f5bea, 4px 0 0 #2f5bea, 4px -2px 0 #2f5bea, 4px -4px 0 #2f5bea, 4px -6px 0 #2f5bea, 4px -8px 0 #2f5bea;
-  transform: rotate(45deg);
 }
 
 .divider {
@@ -1555,68 +1480,97 @@ object {
   background-size: auto;
 }
 
-.title {
-  color: #2c2e30;
-  font-family: "Aileron";
-  font-size: 21px;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-align: center;
-}
-
 .arrow-bottom {
   margin-top: 80px;
   display: inline-block;
 }
 
-.promo-video__url {
-  position: absolute;
-  left: 0;
-  margin: 0 auto;
-  right: 0;
-  top: 50%;
-  width: 122px;
+/*
+	  #07. Header style
+ *==========================================*/
+.site-header {
+  padding: 20px 0px;
 }
 
-.play-btn {
-  position: relative;
-  background: #2f5bea;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  line-height: 120px;
-  margin: 0 auto;
-  display: block;
-  font-size: 30px;
-  text-align: center;
-  border: none;
-  box-shadow: none;
-  outline: none;
-  cursor: pointer;
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-  border: none;
+.navbar {
+  padding: 0px;
 }
-@media only screen and (max-width: 767px) {
-  .play-btn {
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav {
+  margin: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 700;
+  color: #223f78;
+  text-decoration: none;
+  line-height: 38px;
+  padding: 0 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link,
+.navbar-expand-lg .navbar-nav .nav-link:focus, .navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #2f5bea;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  color: #223f78;
+  border: 0;
+  margin: 0 0 0 auto;
+}
+.navbar-toggler:focus, .navbar-toggler:active {
+  background-color: transparent;
+  color: #2f5bea;
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown > .dropdown-menu {
+    background-color: #f6f8f9;
+    display: block;
+    transition: 0.5s all ease-in;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+    transition: 0.5s all ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #223f78;
+  }
+
+  .dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #f6f8f9;
   }
 }
-.play-btn:hover {
-  background-color: #93b9ff;
-}
-
 /*
-*
-* ==========================================
-* hero-banner style
-* ==========================================
-*
-*/
+ # 08.hero-banner style
+ *==========================================*/
 .hero-banner {
   position: relative;
   height: 541px;
@@ -1653,12 +1607,8 @@ object {
 }
 
 /*
-*
-* ==========================================
-* count-down style
-* ==========================================
-*
-*/
+#  #09. Count-down style
+ *==========================================*/
 .count-down {
   position: relative;
 }
@@ -1750,12 +1700,8 @@ object {
 }
 
 /*
-*
-* ==========================================
-* forum-service style
-* ==========================================
-*
-*/
+   #10. Forum service Style
+ *==========================================*/
 .forum-service {
   padding: 66px 0 65px;
   position: relative;
@@ -1787,6 +1733,9 @@ object {
   text-align: justify;
 }
 
+/*
+    #11. Counter area style
+ *==========================================*/
 .counter-area {
   padding: 60px 0;
   overflow: hidden;
@@ -1844,12 +1793,18 @@ object {
   text-align: center;
 }
 
+/*
+   #12. World-map style
+ *==========================================*/
 .world-map {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
+/*
+   #13. forum style
+ *==========================================*/
 .forum {
   padding: 122px 0 113px;
   position: relative;
@@ -1899,6 +1854,9 @@ object {
   padding-bottom: 37px;
 }
 
+/*
+   #14. about style
+ *==========================================*/
 .about {
   padding: 108px 0 140px;
   background-color: #f6f8f9;
@@ -1936,6 +1894,48 @@ object {
   padding-bottom: 37px;
 }
 
+.promo-video__url {
+  position: absolute;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  top: 50%;
+  width: 122px;
+}
+
+.play-btn {
+  position: relative;
+  background: #2f5bea;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  margin: 0 auto;
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+@media only screen and (max-width: 767px) {
+  .play-btn {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+.play-btn:hover {
+  background-color: #93b9ff;
+}
+
+/*
+   #15. moderator style
+ *==========================================*/
 .moderator {
   padding-top: 136px;
   padding-bottom: 0;
@@ -2010,6 +2010,9 @@ object {
   text-align: center;
 }
 
+/*
+   #16. brand style
+ *==========================================*/
 .brand {
   padding: 50px 0;
   overflow: hidden;
@@ -2026,13 +2029,16 @@ object {
 /*============================================================================
 	#23.footer-style
 ==============================================================================*/
-.footer-area {
+/*
+   #17. footer-area style
+ *==========================================*/
+.footer {
   position: relative;
   overflow: hidden;
   border-top: 1px solid #d7d7d7;
   padding: 30px 0;
 }
-.footer-area p {
+.footer p {
   color: #2c2e30;
   font-size: 14px;
   font-weight: 700;
@@ -2041,13 +2047,13 @@ object {
   line-height: normal;
   margin-bottom: 0;
 }
-.footer-area .social-link {
+.footer .social-link {
   padding: 0;
 }
-.footer-area .social-link li.list-inline-item:not(:last-child) {
+.footer .social-link li.list-inline-item:not(:last-child) {
   margin-right: 14px;
 }
-.footer-area .social-link li > a {
+.footer .social-link li > a {
   display: block;
   color: #ffffff;
   -webkit-transition: 0.2s cubic-bezier(0.02, 0.54, 0.58, 1);
@@ -2062,28 +2068,12 @@ object {
   text-align: center;
   border-radius: 50%;
 }
-.footer-area .social-link li > a:hover, .footer-area .social-link li > a:focus {
+.footer .social-link li > a:hover, .footer .social-link li > a:focus {
   color: #ffffff;
   background-color: #93b9ff;
 }
 
 /*  --------------------------------  #24.Responsive Style--------------------------------  */
-/*
-*
-* ==============================================
-* Small devices (landscape phones, 568px and up)
-* ==============================================
-*
-*/
-@media only screen and (min-width: 568px) and (max-width: 767px) {
-  /*
-  *
-  * ==========================================
-  * header end
-  * ==========================================
-  *
-  */
-}
 /*
 *
 * =============================================================
@@ -2149,6 +2139,10 @@ object {
   .order-sm-first {
     -ms-flex-order: -1;
     order: -1;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
   }
 
   .hero-banner__caption {
@@ -2263,6 +2257,10 @@ object {
     display: block;
   }
 
+  .promo-video__url {
+    top: 30%;
+  }
+
   .moderator-title {
     font-size: 30px;
     line-height: 43px;
@@ -2293,19 +2291,12 @@ object {
     line-height: 43px;
   }
 
-  .brand, .partners-brand {
+  .brand {
     padding: 30px 0;
   }
-  .brand .row, .partners-brand .row {
+  .brand .row {
     align-items: center;
     justify-content: center;
-  }
-  .brand .col, .partners-brand .col {
-    -ms-flex-preferred-size: 1;
-    flex-basis: inherit;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 50%;
   }
 
   .partners {
@@ -2336,14 +2327,6 @@ object {
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
   }
-
-  /*
-  *
-  * ==========================================
-  * #helper class end
-  * ==========================================
-  *
-  */
 }
 /*
 *

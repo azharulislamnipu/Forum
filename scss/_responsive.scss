@@ -2,26 +2,6 @@
 /*  --------------------------------  #24.Responsive Style--------------------------------  */
 
 
-/*
-*
-* ==============================================
-* Small devices (landscape phones, 568px and up)
-* ==============================================
-*
-*/
-@media #{$sm-layout} {
-
-  /*
-  *
-  * ==========================================
-  * header end
-  * ==========================================
-  *
-  */
-
-
-}
-
 
 /*
 *
@@ -84,6 +64,10 @@
   .order-sm-first {
     -ms-flex-order: -1;
     order: -1;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0;
   }
 
   .hero-banner__caption {
@@ -204,6 +188,10 @@
       display: block;
     }
   }
+
+  .promo-video__url{
+    top: 30%;
+  }
   .moderator-title{
     font-size: 30px;
     line-height: 43px;
@@ -231,7 +219,7 @@
     }
   }
   
-  .brand, .partners-brand {
+  .brand {
     padding: 30px 0;
 
     .row {
@@ -239,13 +227,6 @@
       justify-content: center;
     }
 
-    .col {
-      -ms-flex-preferred-size: 1;
-      flex-basis: inherit;
-      -ms-flex-positive: 1;
-      flex-grow: 1;
-      max-width: 50%;
-    }
   }
 
   .partners{
@@ -279,14 +260,6 @@
     justify-content: space-between !important;
   }
 
-  /*
-  *
-  * ==========================================
-  * #helper class end
-  * ==========================================
-  *
-  */
-
 
 }
 
@@ -306,7 +279,6 @@
   h3 {
     font-size: 21px;
   }
-
 
   #scroll {
     display: none !important;
@@ -344,7 +316,6 @@
     -moz-background-size: contain;
     -webkit-background-size: contain;
   }
-
 
 }
 

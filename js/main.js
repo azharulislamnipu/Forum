@@ -5,7 +5,37 @@
     const $body = $('body');
 
 
+       /*
+        *
+        * ==========================================
+        *   Menue Toogle
+        * ==========================================
+        *
+        */
 
+    $('body').bind('click', function (e) {
+        if ($(e.target).closest('.navbar-toggler').length == 0) {
+            var opened = $('.navbar-collapse').hasClass('collapse');
+            if (opened === true) {
+                $('.navbar-collapse').collapse('hide');
+                $('.navbar-toggler').find('.fa').addClass('fa-bars');
+                $('.navbar-toggler').find('.fa').removeClass('fas fa-times');
+            }
+        }
+    });
+
+    $body.on('click', '.navbar-toggler', function (e) {
+        e.preventDefault();
+        var dd = $(this).attr('aria-expanded');
+        if (dd != 'false') {
+            $(this).find('.fa').addClass('fa-bars');
+            $(this).find('.fa').removeClass('fas fa-times');
+        } else {
+            $(this).find('.fa').removeClass('fa-bars');
+            $(this).find('.fa').addClass('fas fa-times');
+        }
+
+    });
 
     /*
     *
@@ -16,7 +46,7 @@
     */
 
     $(".lazy").lazyload({
-        effect : "fadeIn"
+        effect: "fadeIn"
     });
 
 

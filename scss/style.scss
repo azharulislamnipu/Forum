@@ -1,6 +1,6 @@
 /*!
 Theme Name: Forum
-Theme URI: https://forum.puredevs.com/
+Theme URI: http://ndev.relicwp.com/forum
 Author: Azharul Islam
 Author URI:http://azhardevs.herokuapp.com/
 Description: Landing Page Template
@@ -10,7 +10,7 @@ Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: forum
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: landing page, Forum, Youth Forum
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
@@ -23,35 +23,30 @@ Use it to make something cool, have fun, and share what you've learned.
 ==========================================
 
    #00. Normalize or reset css
-   #01. Document Setup
+   #01. Base CSS
    #02. Typography
    #03. Element Base
    #04. Forms Input Style
    #05. Wordpress Default style
    #06. Helper Classes
-   #07. Slick slider style
-   #08. Bread Come Style
-   #09. Header and menu style
-   #10. Hero banner Style
-   #11. why choose style
-   #12. work process style
-   #13. Testimonial style
-   #14. get in touch style
-   #15. Blog Style
-   #16. Product Style
-   #17. contact Style
-   #18. Service Style
-   #19. team Style
-   #20. About style
-   #21. error style
-   #22. Search style
-   #23.footer-style
-   #24.Responsive Style
+   #07. Header style
+   #08. Banner Style
+   #09. Count-down style
+   #10. Forum service Style
+   #11. Counter area style
+   #12. World-map style
+   #13. Forum style
+   #14. About style
+   #15. Moderator Style
+   #16. Brand Style
+   #17. footer-style
+   #18. Responsive Style
 
    ==========================================*/
 @import 'custom-font';
 @import 'variabls';
 @import 'common';
+@import 'header';
 @import 'hero-banner';
 @import 'count-down';
 @import 'forum-service';
